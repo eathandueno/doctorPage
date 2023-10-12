@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQ Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="faq.css"> <!-- Link your CSS file here -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Medical Fake Business</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="Newsletter.html">Newsletter</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <div>
+    <ul id="image_list">
+      <li><a href="./images/beakers.jpg" title="Breakers"></a></li>
+      <li><a href="./images/doctor.jpg" title="Doctor"></a></li>
+      <li><a href="./images/stethescope.jpg" title="stethescope"></a></li>
+  </ul>
+
+  <p>
+      <input type="button" id="start" value="Start">
+      <input type="button" id="pause" value="Pause" disabled="true">
+  </p>    
+
+  <p><img id="main_image" src="./images/fakedrdoe.png" alt="Doctor Doe"></p>
+        <h2 id="caption">Doctor Doe</h2>    
+    <h1>Frequently Asked Questions</h1>
+  </div>
+    
+    <button class="accordion">FAQ 1: What services do you provide?</button>
+<div class="panel">
+  <p>we are an excusively online home of medical related questions</p>
+</div>
+
+<button class="accordion">FAQ 2: How does it work?</button>
+<div class="panel">
+  <p>We hired doctors to help train the Artificially intelligent Dr. JS ;) .</p>
+</div>
+
+<button class="accordion">FAQ 3: Can I customize it?</button>
+<div class="panel">
+  <p>Yes! Providing everything but personally identifying information can help narrow what your diagnosis might be.</p>
+</div>
+
+<button class="accordion">FAQ 4: Is it responsive?</button>
+<div class="panel">
+  <p>Yes, it designed to have the human touch of a primary physician but the knowledge of a 1000 doctors.</p>
+</div>
+
+    
+
+  <footer class="bg-light text-center py-4">
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+    </ul>
+    <div class="social-media">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+   <!-- Include Bootstrap JavaScript and jQuery (optional) -->
+   <script src="./faq.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script >
+     let acc = document.getElementsByClassName("accordion");
+    let i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+  </script>
+
+</body>
+</html>
